@@ -1,0 +1,27 @@
+{
+  "name": "asset-zipper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "asset-zipper.js",
+  "scripts": {
+    "test": "mocha",
+    "test:watch": "mocha --watch tests"
+  },
+  "author": "Cory Johnson",
+  "license": "ISC",
+  "dependencies": {
+    "filewatcher": "^3.0.1",
+    "zlib": "^1.0.5"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "karma": "^3.0.0",
+    "mocha": "^5.2.0",
+    "mock-fs": "^4.7.0"
+  },
+  "nodemonConfig": {
+    "execMap": {
+      "main": "./asset-zipper.js testing-argument"
+    }
+  }
+}
